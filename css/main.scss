@@ -1,11 +1,13 @@
-// @import '_normalize.scss';
-// @import '_main.scss';
-// @import '_theme.scss';
-// @import '_main.scss';
-// @import '_header.scss';
-// @import '_form.scss';
+@import 'resets/_normalize';
+@import 'resets/_boiler';
+@import '_theme';
+@import '_header';
+@import '_hero';
+@import '_form';
 
-$red: red;
 body {
-    background: $red;
+background: $navy;
+max-width: 800px;
+margin: auto;
+text-align: center;
 }
