@@ -4,10 +4,34 @@
 @import '_header';
 @import '_hero';
 @import '_form';
+@import '_nav';
 
+html {
+    background: $navy;
+}
 body {
 background: $navy;
-max-width: 800px;
-margin: auto;
+background: linear-gradient(-1deg, #F7E1D7, #EDAFB8, #F9ADA0, #FE938C, #EF6F6C, #CC7178);
+// max-width: 800px;
+// margin: auto;
 text-align: center;
+color: $navy;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    // border: solid 1px white;
+    padding: 1em;
+}
+body > section {
+    // background: yellow;
+}
+*:target {
+    // background: red;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+footer {
+    background: $navy;
+ height: 100px;
 }
