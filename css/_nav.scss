@@ -1,15 +1,7 @@
-body {
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-//   a {
-//     color: #000;
-//   }
 
   .header {
-    background-color: $navy;
+    $color: $navy;
+    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
 
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
@@ -27,6 +19,7 @@ body {
     display: flex;
     // flex-wrap: wrap;
     flex-direction: column;
+    justify-content: left;
   }
   
   .header li a {
@@ -41,6 +34,11 @@ body {
   .header .menu-btn:hover {
     background-color: $gray;
     color: $navy;
+
+      $color: $gray;
+      background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
+  
+
   }
   
 //   .header .logo {

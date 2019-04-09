@@ -12,19 +12,17 @@
     gtag('config', 'UA-137808694-1');
   </script>
   <meta charset="utf-8">
-  <title>Haas Unkrich Weddingf</title>
+  <title>Haas Unkrich Wedding</title>
   <meta name="description"
     content="The Wedding of Alicia Unkrich and Alex Haas on Saturday, June 1st, 2019 in Mount Pleasant, IA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="fonts/fonts.css" type="text/css" charset="utf-8" />
-
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/main.css">
-
+  <!-- <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans:300,400,800" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,700,800" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -38,7 +36,7 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu" id="mainNav">
-      <li><a href="/rsvp">rsvp</a></li>
+      <li><a href="#rsvp">rsvp</a></li>
       <li><a href="#registry">registry</a></li>
       <li><a href="#event">event</a></li>
       <li><a href="#party">wedding party</a></li>
@@ -57,16 +55,35 @@
 
 
 
-  <!-- <section id="rsvp">
+  <section id="rsvp">
     <h1>RSVP</h1>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEPIUI7k0VQWEl7VIiQRsbEd-XmQ71ipjCLqnxI2KICeUvqA/viewform?embedded=true" width="640" height="644" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-  </section> -->
+    <label>House number printed on your invitation's envelope or your P.O. Box number
+      <input id="house-number" name="house-number" type="number">
+    </label>
+    <input id="house-number-lookup" type="submit">
+    <script>
+      var houseNumberButton = document.getElementById("house-number-lookup");
+      var onePersonLookup = [30, 40, 102, 165, 215, 313, 412, 419, 524, 712, 720, 828, 841, 910, 1062, 1506, 2766, 3544, 3900, 4637, 4719, 8501, 12214];
+      var familyLookup = [209, 374, 401, 424, 977, 1005, 1062, 1144, 1321, 2503, 3160, 3400, 3439, 3753, 3838, 5183, 7027, 7483, 23437]
+      houseNumberButton.addEventListener("click", lookup);
+      function lookup() {
+        var houseNumber = Number(document.getElementById("house-number").value);
+        console.log(houseNumber)
+        if (onePersonLookup.includes(houseNumber)) {
+          console.log("ONE PERSON ONLY")
+          location.href = "/rsvp1";
+        } else if (familyLookup.includes(houseNumber)) {
+          console.log("FAMILY")
+          location.href = "/rsvp-family";
+        } else { console.log('2 people');
+         location.href = "/rsvp2";}
+        
+      }
 
-  <section id="registry">
-    <div class="container">
-      <h1>Registry</h1>
-    </div>
+    </script>
   </section>
+
+
 
   <section id="event">
     <div class="container">
@@ -131,7 +148,11 @@
       </section>
     </div>
   </section>
-
+  <section id="registry">
+    <div class="container">
+      <h1>Registry</h1>
+    </div>
+  </section>
   <section id="photos">
     <div class="container">
       <h1>Photos</h1>
