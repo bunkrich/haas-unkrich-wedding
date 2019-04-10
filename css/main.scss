@@ -13,23 +13,36 @@ body {
     height: 100%;
     background: $navy;
     font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
 }
 
 h1 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 3em;
+    font-size: calc(1.8rem + 6vw);
     font-weight: 100;
 }
 
 h2 {
+    font-size: calc(1.2rem + 4vw);
     font-family: 'Abril Fatface', cursive;
-}
+    font-weight: 100;
+    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
 
-@media screen and (max-width: $mobile-break) {
-    h1 {
-        font-size: 2em;
-    }
 }
+ h3 {
+    font-size: calc(1rem + 3vw);
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+}
+p {
+    color: brown;
+    // font-size: calc(14px + 8 * ((100vw - 320px) / 960));
+}
+// @media screen and (max-width: $mobile-break) {
+//     h2 {
+//         font-size: 2em;
+//     }
+// }
 
 .container {
     max-width: 800px;
@@ -63,12 +76,9 @@ h2 {
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
 
     svg {
-        // display: block;
         width: 100%;
         min-width: 100px;
         max-height: 100px;
-        // padding: 2em;
-        // background: yellow;
     }
 }
 
@@ -90,7 +100,6 @@ h2 {
     align-content: center;
     align-items: center;
     background: $white;
-    // border: 2px solid $coral;
     box-shadow: 5px 5px 10px $coral;
     padding: 1em;
     border-radius: 25px;
@@ -101,7 +110,6 @@ h2 {
         box-shadow: 5px 5px 10px $navy;
         background: $navy;
 
-        // border-color: $white;
         svg path {
             fill: white;
         }
@@ -141,3 +149,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+#contact {display:none;
+&:target{display:block;}}

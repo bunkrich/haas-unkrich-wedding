@@ -617,7 +617,7 @@ textarea {
   padding-top: 100px;
 }
 
-#main-header h1 {
+#main-header #alicia-and-alex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,6 +637,7 @@ textarea {
   color: #F5F5F5;
   font-weight: 100;
   font-size: 12vmin;
+  font-size: calc(1em + 2vw);
 }
 
 #main-header .header-and {
@@ -668,7 +669,7 @@ textarea {
     padding-top: 0;
     grid-gap: 1em;
   }
-  #main-header h1 {
+  #main-header #alicia-and-alex {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 2;
@@ -676,7 +677,7 @@ textarea {
     z-index: 2;
     line-height: 1;
   }
-  #main-header h2 {
+  #main-header .main-date {
     -ms-grid-row: 3;
     grid-row: 3;
     -ms-grid-column: 2;
@@ -990,22 +991,30 @@ body {
   height: 100%;
   background: #394055;
   font-family: 'Open Sans', sans-serif;
+  min-width: 320px;
 }
 
 h1 {
   font-family: 'Abril Fatface', cursive;
-  font-size: 3em;
+  font-size: calc(1.8rem + 6vw);
   font-weight: 100;
 }
 
 h2 {
+  font-size: calc(1.2rem + 4vw);
   font-family: 'Abril Fatface', cursive;
+  font-weight: 100;
+  font-size: calc(14px + 8 * ((100vw - 320px) / 960));
 }
 
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 2em;
-  }
+h3 {
+  font-size: calc(1rem + 3vw);
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 100;
+}
+
+p {
+  color: brown;
 }
 
 .container {
@@ -1129,5 +1138,13 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#contact {
+  display: none;
+}
+
+#contact:target {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
