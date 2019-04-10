@@ -798,8 +798,8 @@ input {
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, right top, from(#434b64), color-stop(#394055), to(#2f3546));
-  background: linear-gradient(90deg, #434b64, #394055, #2f3546);
+  background: -webkit-gradient(linear, left bottom, left top, from(#394055), to(#2f3546));
+  background: linear-gradient(0deg, #394055, #2f3546);
   -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -1042,9 +1042,9 @@ h2 {
 }
 
 footer {
-  height: 100px;
-  background: -webkit-gradient(linear, left top, right top, from(#434b64), color-stop(#394055), to(#2f3546));
-  background: linear-gradient(90deg, #434b64, #394055, #2f3546);
+  height: 200px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#434b64), color-stop(#394055), to(#2f3546));
+  background: linear-gradient(0deg, #434b64, #394055, #2f3546);
   color: #626e92;
   display: -webkit-box;
   display: -ms-flexbox;
