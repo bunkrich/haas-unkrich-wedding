@@ -613,7 +613,6 @@ textarea {
 }
 
 #main-header {
-  font-family: 'soriasoria';
   width: 100%;
   padding-top: 100px;
 }
@@ -948,11 +947,11 @@ body {
 
 html {
   background: #394055;
+  background: -webkit-gradient(linear, left top, right top, from(#434b64), color-stop(#394055), to(#2f3546));
+  background: linear-gradient(90deg, #434b64, #394055, #2f3546);
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#434b64), color-stop(#394055), to(#2f3546));
-  background: linear-gradient(90deg, #434b64, #394055, #2f3546);
   color: #394055;
   font-family: 'Open Sans', sans-serif;
 }

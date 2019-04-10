@@ -14,11 +14,14 @@ body {
 
 html {
     background: $navy;
+    $color: $navy;
+    background: linear-gradient(90deg,lighten($color, 5%), $color, darken($color, 5%));
 }
 
 body {
-    $color: $navy;
-    background: linear-gradient(90deg, lighten($color, 5%), $color, darken($color, 5%));
+    // $color: $navy;
+    // padding: 3em;
+    // background: linear-gradient(90deg, red, lighten($color, 5%), $color, darken($color, 5%));
     color: $navy;
     font-family: 'Open Sans', sans-serif;
 }
@@ -115,7 +118,7 @@ h2 {
 footer {
     $color: $navy;
     height: 100px;
-    background: linear-gradient(90deg, lighten($color, 5%), $color, darken($color, 5%));
+    background: linear-gradient(90deg,lighten($color, 5%), $color, darken($color, 5%));
     color: lighten($navy, 20%);
     display: flex;
     text-align: center;
