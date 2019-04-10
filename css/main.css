@@ -751,7 +751,20 @@ textarea {
   max-width: 100%;
 }
 
-#rsvp iframe {
+#rsvp {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f28683), color-stop(#EF6F6C), to(#ec5855));
+  background: linear-gradient(0deg, #f28683, #EF6F6C, #ec5855);
+}
+
+#rsvp h1 {
+  color: white;
+}
+
+#rsvp a {
+  color: #4d5774;
+}
+
+iframe {
   display: block;
   margin: auto;
 }
@@ -763,6 +776,26 @@ input {
   text-align: center;
   padding: .5em;
   width: 200px;
+}
+
+#rsvp-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto min-content;
+      grid-template-rows: auto -webkit-min-content;
+      grid-template-rows: auto min-content;
+}
+
+#rsvp-page p {
+  margin: 0;
+  padding: 2em;
+}
+
+#rsvp-page .container {
+  max-width: 800px;
+  margin: auto;
+  padding: 3em 0 0 0;
+  text-align: center;
 }
 
 .header {
@@ -905,6 +938,12 @@ input {
   }
 }
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
 html {
   background: #394055;
 }
@@ -937,7 +976,7 @@ h2 {
   padding: 1em;
 }
 
-body > section {
+#wedding > section {
   padding: 3em 0;
 }
 
@@ -946,8 +985,7 @@ body > section {
 }
 
 #party {
-  background: linear-gradient(45deg, #434b64, #394055, #2f3546);
-  color: #F5F5F5;
+  background: linear-gradient(45deg, #f2c4ca, #EDAFB8, #e89aa6);
 }
 
 #accommodations {
@@ -994,17 +1032,18 @@ body > section {
 }
 
 #photos {
-  background: linear-gradient(45deg, #f2c4ca, #EDAFB8, #e89aa6);
+  background: linear-gradient(45deg, #434b64, #394055, #2f3546);
+  color: #F5F5F5;
 }
 
-#rsvp {
+#wedding #rsvp {
   background: linear-gradient(45deg, #f28683, #EF6F6C, #ec5855);
   height: 0;
-  overflow: hidden;
   padding: 0;
+  overflow: hidden;
 }
 
-#rsvp:target {
+#wedding #rsvp:target {
   height: auto;
   padding: 3em 0;
 }
@@ -1012,5 +1051,16 @@ body > section {
 footer {
   height: 100px;
   background: linear-gradient(45deg, #434b64, #394055, #2f3546);
+  color: #626e92;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

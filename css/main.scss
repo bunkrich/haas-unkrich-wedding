@@ -6,6 +6,12 @@
 @import '_form';
 @import '_nav';
 
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
 html {
     background: $navy;
 }
@@ -52,7 +58,7 @@ h2 {
     padding: 1em;
 }
 
-body>section {
+#wedding>section {
     // background: yellow;
     padding: 3em 0;
 }
@@ -78,7 +84,7 @@ body>section {
 //     background: red;
 // }
 
-#main-header {}
+// #main-header {}
 
 
 #event {
@@ -88,9 +94,8 @@ body>section {
 }
 
 #party {
-    $color: $navy;
+    $color: $pale;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-    color: $white;
 
 }
 
@@ -131,18 +136,18 @@ body>section {
 }
 
 #photos {
-    $color: $pale;
+  
+    $color: $navy;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-
+    color: $white;
 }
 
-#rsvp {
+#wedding #rsvp {
     $color: $coral;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-    height: 0;
-    overflow: hidden;
+height: 0;
     padding: 0;
-
+overflow: hidden;
     &:target {
         height: auto;
         padding: 3em 0;
@@ -153,5 +158,10 @@ footer {
     $color: $navy;
     height: 100px;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-
+    color: lighten($navy, 20%);
+    // color: red;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }

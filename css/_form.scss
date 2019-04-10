@@ -1,13 +1,46 @@
-#rsvp iframe{
-display:block;
-margin: auto;
-    
+#rsvp {
+    background: linear-gradient(0deg, #f28683, #EF6F6C, #ec5855);
+
+    h1 {
+        color: white;
+    }
+    a {
+        color: lighten($navy, 10%);
+    }
 }
+
+iframe {
+    display: block;
+    margin: auto;
+
+}
+
 input {
-    display:block;
+    display: block;
     margin: 1em 0;
     line-height: 2em;
     text-align: center;
     padding: .5em;
     width: 200px;
+}
+
+#rsvp-page {
+    display: grid;
+    grid-template-rows: auto min-content;
+
+    p {
+        // color: $white;
+        margin: 0;
+        padding: 2em;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: auto;
+        // border: solid 1px white;
+        padding: 3em 0 0 0;
+        text-align: center;
+        // min-height: 800px;
+    }
+
 }
