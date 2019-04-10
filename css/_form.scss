@@ -29,7 +29,6 @@ input {
     grid-template-rows: auto min-content;
 
     p {
-        // color: $white;
         margin: 0;
         padding: 2em;
     }
@@ -37,10 +36,8 @@ input {
     .container {
         max-width: 800px;
         margin: auto;
-        // border: solid 1px white;
         padding: 3em 0 0 0;
         text-align: center;
-        // min-height: 800px;
     }
 
 }

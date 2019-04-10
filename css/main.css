@@ -799,7 +799,8 @@ input {
 }
 
 .header {
-  background: linear-gradient(45deg, #434b64, #394055, #2f3546);
+  background: -webkit-gradient(linear, left top, right top, from(#434b64), color-stop(#394055), to(#2f3546));
+  background: linear-gradient(90deg, #434b64, #394055, #2f3546);
   -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -832,7 +833,12 @@ input {
   color: white;
 }
 
-.header li a:hover,
+.header li a:hover {
+  background-color: #ACAEAB;
+  color: #394055;
+  background: linear-gradient(45deg, #b9bbb8, #ACAEAB, #9fa19e);
+}
+
 .header .menu-btn:hover {
   background-color: #ACAEAB;
   color: #394055;
@@ -868,8 +874,7 @@ input {
   width: 18px;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
+.header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
   background: #FE938C;
   content: '';
   display: block;
@@ -888,7 +893,6 @@ input {
   top: -5px;
 }
 
-/* menu btn */
 .header .menu-btn {
   display: none;
 }
@@ -911,12 +915,10 @@ input {
           transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
-/* 48em = 768px */
 @media screen and (min-width: 800px) {
   .header ul {
     -webkit-box-pack: center;
@@ -949,7 +951,8 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg, #434b64, #394055, #2f3546);
+  background: -webkit-gradient(linear, left top, right top, from(#434b64), color-stop(#394055), to(#2f3546));
+  background: linear-gradient(90deg, #434b64, #394055, #2f3546);
   color: #394055;
   font-family: 'Open Sans', sans-serif;
 }
@@ -1050,7 +1053,8 @@ h2 {
 
 footer {
   height: 100px;
-  background: linear-gradient(45deg, #434b64, #394055, #2f3546);
+  background: -webkit-gradient(linear, left top, right top, from(#434b64), color-stop(#394055), to(#2f3546));
+  background: linear-gradient(90deg, #434b64, #394055, #2f3546);
   color: #626e92;
   display: -webkit-box;
   display: -ms-flexbox;

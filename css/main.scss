@@ -18,74 +18,36 @@ html {
 
 body {
     $color: $navy;
-    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-    // max-width: 800px;
-    // margin: auto;
-    // text-align: center;
+    background: linear-gradient(90deg, lighten($color, 5%), $color, darken($color, 5%));
     color: $navy;
-
     font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-    //     font-family: 'Amatic SC', cursive;
-    // font-size: 3em;
-    // font-weight: 100;
     font-family: 'Abril Fatface', cursive;
     font-size: 3em;
     font-weight: 100;
 }
 
 h2 {
-    // font-size: 2em;
-    // font-family: 'Amatic SC', cursive;
-    // font-weight: 100;
     font-family: 'Abril Fatface', cursive;
-
 }
 
 @media screen and (max-width: $mobile-break) {
     h1 {
         font-size: 2em;
-
     }
 }
 
 .container {
     max-width: 800px;
     margin: auto;
-    // border: solid 1px white;
     padding: 1em;
 }
 
 #wedding>section {
-    // background: yellow;
     padding: 3em 0;
 }
-
-// *:target {
-//     // background: red;
-//     padding-top: 50px;
-//     // min-height: 100vh;
-// }
-
-
-// #event:after {
-//     content: "";
-//     border-bottom-left-radius: 50% 20%;
-//     border-bottom-right-radius: 50% 20%;
-//     background: blue;
-//     display: block;
-//     height: 100px;
-//     width: 90%;
-//     padding: 100px;
-// }
-// #event{
-//     background: red;
-// }
-
-// #main-header {}
-
 
 #event {
     $color: $green;
@@ -102,8 +64,6 @@ h2 {
 #accommodations {
     $color: $tan;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-
-
 }
 
 #registry {
@@ -120,7 +80,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .store {
@@ -132,11 +91,9 @@ h2 {
     border: 1px solid white;
     padding: 1em;
     border-radius: 50%;
-
 }
 
 #photos {
-  
     $color: $navy;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
     color: $white;
@@ -145,9 +102,10 @@ h2 {
 #wedding #rsvp {
     $color: $coral;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-height: 0;
+    height: 0;
     padding: 0;
-overflow: hidden;
+    overflow: hidden;
+
     &:target {
         height: auto;
         padding: 3em 0;
@@ -157,9 +115,8 @@ overflow: hidden;
 footer {
     $color: $navy;
     height: 100px;
-    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
+    background: linear-gradient(90deg, lighten($color, 5%), $color, darken($color, 5%));
     color: lighten($navy, 20%);
-    // color: red;
     display: flex;
     text-align: center;
     justify-content: center;

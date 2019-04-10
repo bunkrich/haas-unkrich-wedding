@@ -16,17 +16,13 @@
         color: $white;
         font-weight: 100;
         font-size: 12vmin;
-
-
     }
 
     .header-and {
         color: $white;
         font-weight: 100;
-
         display: inline-flex;
         padding: 0 .5em;
-
         margin: 0;
     }
 
@@ -42,7 +38,7 @@
 @supports (display: grid) {
     #main-header {
         display: grid;
-        grid-template-columns:10px auto 1fr ;
+        grid-template-columns: 10px auto 1fr;
         grid-template-rows: 1fr auto auto;
         padding-top: 0;
         grid-gap: 1em;
@@ -52,8 +48,6 @@
             grid-column: 2;
             z-index: 2;
             line-height: 1;
-
-
         }
 
         h2 {
@@ -84,7 +78,6 @@
 
             &:hover {
                 background: $coral;
-
             }
         }
     }
@@ -93,14 +86,12 @@
         grid-row: 1 / 5;
         grid-column: 1 / 4;
         background-image: url("/img/alica-and-alex-engagement-picture-in-front-of-tree.jpg");
-        // background: red;
-        // max-height: 100vh;
         width: 100%;
-        // height: auto;
         height: 50vh;
         background-position: 78% 50%;
         background-size: cover;
-min-height: 500px;
+        min-height: 500px;
+
         &::before {
             content: "";
             height: 100%;
@@ -123,5 +114,4 @@ min-height: 500px;
 
         }
     }
-
 }
