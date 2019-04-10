@@ -5,6 +5,7 @@
 @import '_hero';
 @import '_form';
 @import '_nav';
+@import '_gallery';
 
 html,
 body {
@@ -61,27 +62,54 @@ h2 {
     $color: $peach;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
 
-    img {
-        display: block;
-        max-width: 50px;
+    svg {
+        // display: block;
+        width: 100%;
+        min-width: 100px;
+        max-height: 100px;
+        // padding: 2em;
+        // background: yellow;
     }
 }
 
 .stores {
+    padding: 2em 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    p {
+        display: none;
+    }
 }
 
 .store {
+    flex: 0 0 30%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-content: center;
     align-items: center;
-    background: $peach;
-    border: 1px solid white;
+    background: $white;
+    // border: 2px solid $coral;
+    box-shadow: 5px 5px 10px $coral;
     padding: 1em;
-    border-radius: 50%;
+    border-radius: 25px;
+    justify-content: center;
+    transition: all .5s;
+
+    &:hover {
+        box-shadow: 5px 5px 10px $navy;
+        background: $navy;
+
+        // border-color: $white;
+        svg path {
+            fill: white;
+        }
+
+        svg circle {
+            fill: white;
+        }
+    }
 }
 
 #photos {
