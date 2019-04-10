@@ -24,7 +24,8 @@ h1{
 // font-size: 3em;
 // font-weight: 100;
 font-family: 'Abril Fatface', cursive;
-
+font-size: 3em;
+font-weight: 100;
 }
 h2 {
     // font-size: 2em;
@@ -42,12 +43,13 @@ h2 {
 }
 body > section {
     // background: yellow;
+    padding: 3em 0;
 }
-*:target {
-    // background: red;
-    padding-top: 50px;
-    min-height: 100vh;
-}
+// *:target {
+//     // background: red;
+//     padding-top: 50px;
+//     // min-height: 100vh;
+// }
 
 
 // #event:after {
@@ -81,7 +83,7 @@ $color: $green;
 
 }
 
-#accommodations > div{
+#accommodations {
    $color: $tan;
    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
 
@@ -90,6 +92,27 @@ $color: $green;
 #registry {
     $color: $peach;
     background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
+img {
+    display: block;
+    max-width: 50px;
+}
+}
+.stores {
+   display: flex;
+   flex-wrap: wrap;
+justify-content: space-between;
+
+}
+.store{
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background: $peach;
+    border: 1px solid white;
+    padding: 1em;
+    border-radius: 50%;
 
 }
 #photos {
@@ -100,7 +123,13 @@ $color: $green;
 #rsvp {
     $color: $coral;
     background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
-
+height: 0;
+overflow: hidden;
+padding: 0;
+&:target {
+    height: auto;
+    padding: 3em 0;
+}
 }
 footer {
     $color: $navy;

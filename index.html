@@ -50,45 +50,24 @@
     <h1><span class='header-name'>Alicia</span> <span class="header-and">&</span> <span class="header-name">Alex</span>
     </h1>
     <h2 class="main-date">Saturday, June 1st, 2019</h2>
-    <div id="hero"><img src="img/alica-and-alex-engagement-picture-in-front-of-tree.jpg" alt=""></div>
+    <a href="#rsvp">RSVP</a>
+    <div id="hero">
+      <!-- <img src="img/alica-and-alex-engagement-picture-in-front-of-tree.jpg" alt=""> -->
+    </div>
   </header>
 
 
 
   <section id="rsvp">
-    <h1>RSVP</h1>
-    <label>Please enter your house number printed on your invitation's envelope or your P.O. Box number. 
-      <input id="house-number" name="house-number" type="number">
-    </label>
-    <input id="house-number-lookup" type="submit">
-    <p>If there was no address or you can't remember, leave it blank.</p>
-    <script>
-      var houseNumberButton = document.getElementById("house-number-lookup");
-      var onePersonLookup = [30, 40, 102, 165, 215, 313, 412, 419, 524, 712, 720, 828, 841, 910, 1062, 1506, 2766, 3544, 3900, 4637, 4719, 8501, 12214];
-      var familyLookup = [209, 374, 401, 424, 977, 1005, 1062, 1144, 1321, 2503, 3160, 3400, 3439, 3753, 3838, 5183, 7027, 7483, 23437]
-      houseNumberButton.addEventListener("click", lookup);
-      document.getElementById('house-number').addEventListener('keypress', function(event) {
-        if (event.keyCode == 13) {
-            event.preventDefault();
-            console.log("ENTER");
-            lookup();
-        }
-    });
-      function lookup() {
-        var houseNumber = Number(document.getElementById("house-number").value);
-        console.log(houseNumber)
-        if (onePersonLookup.includes(houseNumber)) {
-          console.log("ONE PERSON ONLY")
-          location.href = "/rsvp1";
-        } else if (familyLookup.includes(houseNumber)) {
-          console.log("FAMILY")
-          location.href = "/rsvp-family";
-        } else { console.log('2 people');
-         location.href = "/rsvp2";}
-        
-      }
-
-    </script>
+    <div class="container">
+      <h1>RSVP</h1>
+      <h3>Please RSVP by May 1st.</h3>
+      <label>To get started, enter your house number printed on your invitation's envelope or P.O. Box number.
+        <input placeholder="Your House Number" id="house-number" name="house-number" type="number">
+      </label>
+      <input id="house-number-lookup" type="submit" value="Get Started">
+      <p>If there was no address or you can't remember, leave it blank.</p>
+    </div>
   </section>
 
 
@@ -112,6 +91,54 @@
         <h3>Location</h3>
         <p>Other information about the reception</p>
       </section>
+    </div>
+  </section>
+
+
+
+  <section id="accommodations">
+    <div class="container">
+      <h1>Accommodations</h1>
+      <section id="hotel">
+        <h2>Hotel</h2>
+        <h3>Location</h3>
+        <h4>Contact Information</h4>
+        <p>Other information about the hotel</p>
+      </section>
+    </div>
+  </section>
+
+  <section id="registry">
+    <div class="container">
+      <h1>Registry</h1>
+      <section class="stores">
+
+        <a class="store" href="/">
+          <img src="icon.png" alt="">
+          <p>Store Name</p>
+        </a>
+
+        <a class="store" href="/">
+          <img src="icon.png" alt="">
+          <p>Store Name</p>
+        </a>
+
+        <a class="store" href="/">
+          <img src="icon.png" alt="">
+          <p>Store Name</p>
+        </a>
+
+      </section>
+    </div>
+  </section>
+
+  <section id="photos">
+    <div class="container">
+      <h1>Photos</h1>
+      <div>Engagement Pics</div>
+      <div>Couple Pics</div>
+      <div>Dog Pics</div>
+      <div>Friends & Family Pics</div>
     </div>
   </section>
 
@@ -144,32 +171,6 @@
       </section>
     </div>
   </section>
-
-  <section id="accommodations">
-    <div class="container">
-      <h1>Accommodations</h1>
-      <section id="hotel">
-        <h2>Hotel</h2>
-        <h3>Location</h3>
-        <h4>Contact Information</h4>
-        <p>Other information about the hotel</p>
-      </section>
-    </div>
-  </section>
-  <section id="registry">
-    <div class="container">
-      <h1>Registry</h1>
-    </div>
-  </section>
-  <section id="photos">
-    <div class="container">
-      <h1>Photos</h1>
-      <div>Engagement Pics</div>
-      <div>Couple Pics</div>
-      <div>Dog Pics</div>
-      <div>Friends & Family Pics</div>
-    </div>
-  </section>
   <footer>
     Alicia Unkrich & Alex Haas Wedding 2019
   </footer>
@@ -182,11 +183,7 @@
 
 
 </body>
-<script>
-  document.getElementById("mainNav").addEventListener("click", hideMenu);
-  function hideMenu() {
-    document.getElementById("menu-btn").checked = false;
-  }
+
 </script>
 
 </html>
