@@ -106,7 +106,7 @@ h2 {
 footer {
     $color: $navy;
     height: 200px;
-    background: linear-gradient(0deg,lighten($color, 5%), $color, darken($color, 5%));
+    background: linear-gradient(0deg, $color, lighten($color, 5%));
     color: lighten($navy, 20%);
     display: flex;
     text-align: center;

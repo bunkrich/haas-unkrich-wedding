@@ -1043,8 +1043,8 @@ h2 {
 
 footer {
   height: 200px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#434b64), color-stop(#394055), to(#2f3546));
-  background: linear-gradient(0deg, #434b64, #394055, #2f3546);
+  background: -webkit-gradient(linear, left bottom, left top, from(#394055), to(#434b64));
+  background: linear-gradient(0deg, #394055, #434b64);
   color: #626e92;
   display: -webkit-box;
   display: -ms-flexbox;
