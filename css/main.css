@@ -662,8 +662,8 @@ textarea {
   #main-header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr auto 10px;
-        grid-template-columns: 1fr auto 10px;
+    -ms-grid-columns: 10px auto 1fr;
+        grid-template-columns: 10px auto 1fr;
     -ms-grid-rows: 1fr auto auto;
         grid-template-rows: 1fr auto auto;
     padding-top: 0;
@@ -683,7 +683,7 @@ textarea {
     -ms-grid-column: 2;
     grid-column: 2;
     z-index: 2;
-    line-height: 0;
+    line-height: 1;
     text-align: center;
     padding: 1em 0;
   }
@@ -692,8 +692,8 @@ textarea {
     grid-row: 4;
     -ms-grid-column: 2;
     grid-column: 2;
-    z-index: 3;
-    font-size: 2em;
+    z-index: 2;
+    font-size: 1.5rem;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
@@ -718,11 +718,11 @@ textarea {
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
     background-image: url("/img/alica-and-alex-engagement-picture-in-front-of-tree.jpg");
-    max-height: 100vh;
     width: 100%;
     height: 50vh;
     background-position: 78% 50%;
     background-size: cover;
+    min-height: 500px;
   }
   #hero::before {
     content: "";
@@ -884,7 +884,7 @@ input {
 }
 
 /* 48em = 768px */
-@media (min-width: 48em) {
+@media screen and (min-width: 800px) {
   .header ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -923,6 +923,12 @@ h1 {
 
 h2 {
   font-family: 'Abril Fatface', cursive;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2em;
+  }
 }
 
 .container {

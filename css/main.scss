@@ -9,24 +9,27 @@
 html {
     background: $navy;
 }
+
 body {
     $color: $navy;
-    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
-// max-width: 800px;
-// margin: auto;
-// text-align: center;
-color: $navy;
+    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
+    // max-width: 800px;
+    // margin: auto;
+    // text-align: center;
+    color: $navy;
 
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-h1{
-//     font-family: 'Amatic SC', cursive;
-// font-size: 3em;
-// font-weight: 100;
-font-family: 'Abril Fatface', cursive;
-font-size: 3em;
-font-weight: 100;
+
+h1 {
+    //     font-family: 'Amatic SC', cursive;
+    // font-size: 3em;
+    // font-weight: 100;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3em;
+    font-weight: 100;
 }
+
 h2 {
     // font-size: 2em;
     // font-family: 'Amatic SC', cursive;
@@ -35,16 +38,25 @@ h2 {
 
 }
 
+@media screen and (max-width: $mobile-break) {
+    h1 {
+        font-size: 2em;
+
+    }
+}
+
 .container {
     max-width: 800px;
     margin: auto;
     // border: solid 1px white;
     padding: 1em;
 }
-body > section {
+
+body>section {
     // background: yellow;
     padding: 3em 0;
 }
+
 // *:target {
 //     // background: red;
 //     padding-top: 50px;
@@ -66,46 +78,48 @@ body > section {
 //     background: red;
 // }
 
-#main-header {
-
-}
+#main-header {}
 
 
 #event {
-$color: $green;
-    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
+    $color: $green;
+    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
 
 }
+
 #party {
     $color: $navy;
-    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
+    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
     color: $white;
 
 }
 
 #accommodations {
-   $color: $tan;
-   background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
+    $color: $tan;
+    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
 
 
 }
+
 #registry {
     $color: $peach;
-    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
-img {
-    display: block;
-    max-width: 50px;
+    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
+
+    img {
+        display: block;
+        max-width: 50px;
+    }
 }
-}
+
 .stores {
-   display: flex;
-   flex-wrap: wrap;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
-.store{
+
+.store {
     display: flex;
-    // align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -115,25 +129,29 @@ justify-content: space-between;
     border-radius: 50%;
 
 }
+
 #photos {
     $color: $pale;
-    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
+    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
 
 }
+
 #rsvp {
     $color: $coral;
-    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
-height: 0;
-overflow: hidden;
-padding: 0;
-&:target {
-    height: auto;
-    padding: 3em 0;
+    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+
+    &:target {
+        height: auto;
+        padding: 3em 0;
+    }
 }
-}
+
 footer {
     $color: $navy;
     height: 100px;
-    background: linear-gradient(45deg, lighten($color, 5%),$color, darken( $color, 5% ));
+    background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
 
 }

@@ -127,7 +127,7 @@
   
   /* 48em = 768px */
   
-  @media (min-width: 48em) {
+  @media screen and (min-width: $mobile-break) {
       .header ul {
         justify-content: center;
       }
