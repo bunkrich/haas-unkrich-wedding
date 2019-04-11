@@ -32,20 +32,13 @@ h2 {
     // font-size: calc(1.6rem + 2vw);
 
 }
- h3 {
+
+h3 {
     font-size: calc(1rem + 2vw);
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
 }
-p {
-    // color: brown;
-    // font-size: calc(14px + 8 * ((100vw - 320px) / 960));
-}
-// @media screen and (max-width: $mobile-break) {
-//     h2 {
-//         font-size: 2em;
-//     }
-// }
+
 
 .container {
     max-width: 800px;
@@ -67,6 +60,38 @@ p {
     $color: $pale;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
 
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        // line-height: 2em;
+        font-size: 1.2em;
+        padding: .5em 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+            // background: red;
+        }
+        // grid-auto-columns: min-content min-content;
+grid-gap: 1em;
+grid-auto-flow: row;
+text-align: center;
+        h2 {
+            grid-row: 1;
+            grid-column: 1 / -1;
+        }
+
+        section:last-child{
+            grid-column: 1 / -1;
+        }
+    }
 }
 
 #accommodations {
@@ -153,7 +178,15 @@ footer {
     align-items: center;
 }
 
-#contact {display:none;
-&:target{display:block;}}
+#contact {
+    display: none;
 
-img[data-sizes="auto"] { display: block; width: 100%; }
+    &:target {
+        display: block;
+    }
+}
+
+img[data-sizes="auto"] {
+    display: block;
+    width: 100%;
+}

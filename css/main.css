@@ -1077,6 +1077,44 @@ h3 {
   background: linear-gradient(45deg, #f2c4ca, #EDAFB8, #e89aa6);
 }
 
+#party ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#party li {
+  font-size: 1.2em;
+  padding: .5em 0;
+}
+
+#party .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-flow: row;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  #party .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+#party .container h2 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+#party .container section:last-child {
+  grid-column: 1 / -1;
+}
+
 #accommodations {
   background: linear-gradient(45deg, #fbf1ec, #F7E1D7, #f3d1c2);
 }
