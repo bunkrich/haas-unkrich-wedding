@@ -1,10 +1,9 @@
 .gallery {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 1vw;
   overflow: hidden;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-flow: dense;
-
   @media (max-width: 500px) {
     grid-template-columns: auto;
   }
@@ -30,6 +29,9 @@
     grid-column: span 2;
     background: $peach;
   }
+  .square {
+    background: $peony;
+  }
 
 }
 
@@ -43,7 +45,7 @@
 }
 
 .portrait,
-.landscape {
+.landscape, .square {
   overflow: hidden;
 }
 

@@ -61,9 +61,9 @@ h3 {
 }
 
 #event {
-    $color: $green;
+    $color: $navy;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-
+color: white;
     .directions {
         display: block;
         margin: auto;
@@ -172,9 +172,9 @@ h3 {
 }
 
 #registry {
-    $color: $peach;
+ $color: $green;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-
+    color: $white;
     svg {
         width: 100%;
         min-width: 100px;
@@ -200,7 +200,7 @@ h3 {
     align-content: center;
     align-items: center;
     background: $white;
-    box-shadow: 5px 5px 10px $coral;
+    box-shadow: 5px 5px 10px $hunter;
     padding: 1em;
     border-radius: 25px;
     justify-content: center;
@@ -218,9 +218,9 @@ h3 {
 }
 
 #photos {
-    $color: $navy;
+    $color: $coral;
+    color: white;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
-    color: $white;
 }
 
 #wedding #rsvp {
@@ -230,7 +230,7 @@ h3 {
         border: unset;
     }
 
-    $color: $coral;
+    $color: $peach;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
     // height: 0;
     // padding: 0;
