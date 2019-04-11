@@ -586,32 +586,6 @@ textarea {
   }
 }
 
-:root {
-  --navy: #394055;
-  --green: #5B7761;
-  --gray: #ACAEAB;
-  --white: #F5F5F5;
-  --hunter: #172121;
-  --tan: #F7E1D7;
-  --peach: #F9ADA0;
-  --coral: #EF6F6C;
-  --peony: #CC7178;
-  --pale: #EDAFB8;
-  --pink: #FE938C;
-  --main-color: var(--navy);
-  --main-color-soft: var(--navy);
-  --main-color-hard: var(--navy);
-  --accent-color: var(--white);
-  --accent-color-soft: var(--navy);
-  --accent-color-hard: var(--navy);
-  --pop-color: var(--coral);
-  --pop-color-soft: var(--navy);
-  --pop-color-hard: var(--navy);
-  --back-color: var(--pale);
-  --back-color-soft: var(--navy);
-  --back-color-hard: var(--navy);
-}
-
 #main-header {
   width: 100%;
   padding-top: 100px;
@@ -697,7 +671,7 @@ textarea {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
-    background: #FE938C;
+    background: #394055;
     color: #F5F5F5;
     display: block;
     margin: .5em auto 1em auto;
@@ -708,7 +682,7 @@ textarea {
     transition: all .5s;
   }
   #main-header a:hover {
-    background: #EF6F6C;
+    background: #252936;
   }
   #hero {
     -ms-grid-row: 1;
@@ -717,21 +691,29 @@ textarea {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
-    background-image: url("/img/alica-and-alex-engagement-picture-in-front-of-tree.jpg");
     width: 100%;
     height: 50vh;
-    background-position: 78% 50%;
-    background-size: cover;
     min-height: 500px;
+    overflow: hidden;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-  #hero::before {
+  #hero::after {
     content: "";
     height: 100%;
     width: 100%;
     background: linear-gradient(45deg, #434b64, #394055, #2f3546);
-    z-index: 4;
+    z-index: 1;
     display: block;
-    opacity: .4;
+    opacity: .5;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
   #hero img {
     max-height: 100vh;
@@ -744,6 +726,45 @@ textarea {
        object-position: right;
     -o-object-position: 78% 50%;
        object-position: 78% 50%;
+    z-index: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -webkit-animation: hello 3s;
+            animation: hello 3s;
+  }
+  @-webkit-keyframes hello {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes hello {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  #hero .blur-up {
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+    -webkit-transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+    transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+    transition: filter 2s ease-out, transform 3s ease-in;
+    transition: filter 2s ease-out, transform 3s ease-in, -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+  }
+  #hero .blur-up.lazyloaded {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -985,6 +1006,32 @@ input {
   min-width: 90vw;
 }
 
+#photos .container > div {
+  color: black;
+}
+
+.portrait, .landscape {
+  overflow: hidden;
+}
+
+.blur-up {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+  transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+  transition: filter 2s ease-out, transform 3s ease-in;
+  transition: filter 2s ease-out, transform 3s ease-in, -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+}
+
+.blur-up.lazyloaded {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 html,
 body {
   margin: 0;
@@ -1004,17 +1051,12 @@ h2 {
   font-size: calc(1.2rem + 4vw);
   font-family: 'Abril Fatface', cursive;
   font-weight: 100;
-  font-size: calc(14px + 8 * ((100vw - 320px) / 960));
 }
 
 h3 {
-  font-size: calc(1rem + 3vw);
+  font-size: calc(1rem + 2vw);
   font-family: 'Abril Fatface', cursive;
   font-weight: 100;
-}
-
-p {
-  color: brown;
 }
 
 .container {
@@ -1146,5 +1188,10 @@ footer {
 
 #contact:target {
   display: block;
+}
+
+img[data-sizes="auto"] {
+  display: block;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

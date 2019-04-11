@@ -1,29 +1,29 @@
 
-:root {
-    --navy: #394055;
-    --green: #5B7761;
-    --gray: #ACAEAB;
-    --white: #F5F5F5;
-    --hunter: #172121;
-    --tan: #F7E1D7;
-    --peach: #F9ADA0;
-    --coral: #EF6F6C;
-    --peony: #CC7178;
-    --pale: #EDAFB8;
-    --pink: #FE938C;
-    --main-color: var(--navy);
-    --main-color-soft: var(--navy);
-    --main-color-hard: var(--navy);
-    --accent-color: var(--white);
-    --accent-color-soft: var(--navy);
-    --accent-color-hard: var(--navy);
-    --pop-color: var(--coral);
-    --pop-color-soft: var(--navy);
-    --pop-color-hard: var(--navy);
-    --back-color: var(--pale);
-    --back-color-soft: var(--navy);
-    --back-color-hard: var(--navy);
-  }
+// :root {
+//     --navy: #394055;
+//     --green: #5B7761;
+//     --gray: #ACAEAB;
+//     --white: #F5F5F5;
+//     --hunter: #172121;
+//     --tan: #F7E1D7;
+//     --peach: #F9ADA0;
+//     --coral: #EF6F6C;
+//     --peony: #CC7178;
+//     --pale: #EDAFB8;
+//     --pink: #FE938C;
+//     --main-color: var(--navy);
+//     --main-color-soft: var(--navy);
+//     --main-color-hard: var(--navy);
+//     --accent-color: var(--white);
+//     --accent-color-soft: var(--navy);
+//     --accent-color-hard: var(--navy);
+//     --pop-color: var(--coral);
+//     --pop-color-soft: var(--navy);
+//     --pop-color-hard: var(--navy);
+//     --back-color: var(--pale);
+//     --back-color-soft: var(--navy);
+//     --back-color-hard: var(--navy);
+//   }
 
  $navy: #394055;
  $green: #5B7761;
@@ -51,3 +51,15 @@
 // }
 
 $mobile-break: 800px;
+
+// @font-face {
+//   font-family: 'Abril Fatface';
+//   font-display: swap;
+//   src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-lmjcDidBeT5g.woff2) format('woff2');
+// }
+
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-display: swap;
+//   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+// }

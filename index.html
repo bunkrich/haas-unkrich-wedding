@@ -4,6 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Haas Unkrich Wedding</title>
+
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,700,800" as="style">
+  <link rel="preload" href="js/lazysizes.min.js" as="script">
+  <link rel="preload" href="js/vendor/modernizr-3.7.1.min.js" as="script">
+  <link rel="preload" href="js/plugins.js" as="script">
+  <link rel="preload" href="js/main.js" as="script">
+
   <meta name="description"
     content="The Wedding of Alicia Unkrich and Alex Haas on Saturday, June 1st, 2019 in Mount Pleasant, IA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +21,20 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,700,800" rel="stylesheet">
   <meta name="theme-color" content="#394055">
+  <script src="js/lazysizes.min.js" async=""></script>
+  <style>
+  @font-face {
+  font-family: 'Abril Fatface';
+  font-display: swap;
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-lmjcDidBeT5g.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+}
+  </style>
 </head>
 
 <body id="wedding">
@@ -37,9 +59,13 @@
         class="header-name">Alex</span>
     </h1>
     <h2 class="main-date">Saturday, June 1st, 2019</h2>
-    <a href="#rsvp">RSVP</a>
+    <a href="#rsvp" aria-label="RSVP Now!">RSVP</a>
     <div id="hero">
-      <!-- <img src="img/alica-and-alex-engagement-picture-in-front-of-tree.jpg" alt=""> -->
+      
+      <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/alica-and-alex-engagement-picture-in-front-of-tree.jpg" data-src="img/reg/alica-and-alex-engagement-picture-in-front-of-tree.jpg" alt="">
+      <!-- <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-t-2.jpg" data-src="img/small/img-t-2.jpg" -->
+   
+
     </div>
   </header>
 
@@ -72,7 +98,7 @@
           <div>2555 Lexington Ave</div>
           <div>Mount Pleasant, IA 52641</div>
           <div class="directions">
-            <a target="_blank" href="https://goo.gl/maps/w6ArAxrdJbG2">Directions</a>
+            <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/w6ArAxrdJbG2">Directions</a>
           </div>
         </div>
 
@@ -100,7 +126,7 @@
       </p>
       <p>They are blocked under "Haas Unkrich Wedding".</p>
       <p>Reservations should be made by May 10th.</p>
-      <a target="_blank"
+      <a target="_blank" rel="noreferrer" 
         href="https://www.google.com/maps/d/viewer?mid=122hdI2I95tlwoqFKx3N9rgVBnUymSWh2&usp=sharing">View All Locations
         on a Map</a>
 
@@ -110,7 +136,7 @@
         <div>1100 N Grand Ave</div>
         <div>Mount Pleasant, IA 52641</div>
         <div class="directions">
-          <a target="_blank" href="https://goo.gl/maps/h28acmVHt992">Directions</a>
+          <a target="_blank" rel="noreferrer"  href="https://goo.gl/maps/h28acmVHt992">Directions</a>
         </div>
       </section>
 
@@ -120,7 +146,7 @@
         <div>1200 E Baker St</div>
         <div>Mount Pleasant, IA 52641</div>
         <div class="directions">
-          <a target="_blank" href="https://goo.gl/maps/fkouT3zg15H2">Directions</a>
+          <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/fkouT3zg15H2">Directions</a>
         </div>
       </section>
 
@@ -130,7 +156,7 @@
         <div>810 N Grand Ave</div>
         <div>Mount Pleasant, IA 52641</div>
         <div class="directions">
-          <a target="_blank" href="https://goo.gl/maps/yfNhmps6X1E2">Directions</a>
+          <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/yfNhmps6X1E2">Directions</a>
         </div>
       </section>
 
@@ -147,7 +173,7 @@
       <p>If you insist on giving us a wedding gift, we've provided a few suggestions below.</p>
       <div class="stores">
 
-        <a class="store"
+        <a class="store" aria-label="Visit Our Registry at target.com"
           href="https://www.target.com/gift-registry/giftgiver?registryId=36714c6eee1c44b6a80f71fc533d0891&lnk=registry_custom_url">
           <svg viewBox="95 0 67 91" xmlns="http://www.w3.org/2000/svg">
             <g fill="#C00">
@@ -162,7 +188,7 @@
           <p>Target</p>
         </a>
 
-        <a class="store" href="https://www.wayfair.com/registry/wedding/faa323fc-9ea1-420f-b3f7-17aa0307867c">
+        <a class="store" aria-label="Visit Our Registry at wayfair.com" href="https://www.wayfair.com/registry/wedding/faa323fc-9ea1-420f-b3f7-17aa0307867c">
           <svg width="175" height="38" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wayfair"
             viewBox="0 0 1299.3 285">
             <title>Wayfair</title>
@@ -221,13 +247,34 @@
         <div class="portrait">Dog Pics</div>
         <div>Friends & Family Pics</div>
 
-        <div class="portrait"><img src="img/img-t-2.jpg" alt=""></div>
-        <div class="portrait"><img src="img/img-t-3.jpg" alt=""></div>
-        <div class="landscape"><img src="img/img-w-4.jpg" alt=""></div>
-        <div class="portrait"><img src="img/img-t-5.jpg" alt=""></div>
-        <div class="portrait"><img src="img/img-t-6.jpg" alt=""></div>
-        <div class="landscape"><img src="img/img-w-7.jpg" alt=""></div>
-        <div class="landscape"><img src="img/img-w-1.jpg" alt=""></div>
+        <div class="portrait">
+          <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-t-2.jpg" data-src="img/small/img-t-2.jpg"
+            alt="">
+        </div>
+        <div class="portrait">
+          <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-t-3.jpg" data-src="img/small/img-t-3.jpg"
+            alt="">
+        </div>
+        <div class="landscape">
+          <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-w-4.jpg" data-src="img/small/img-w-4.jpg"
+            alt="">
+        </div>
+        <div class="portrait">
+          <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-t-5.jpg" data-src="img/small/img-t-5.jpg"
+            alt="">
+        </div>
+        <div class="portrait">
+          <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-t-6.jpg" data-src="img/small/img-t-6.jpg"
+            alt="">
+        </div>
+        <div class="landscape">
+          <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-w-7.jpg" data-src="img/small/img-w-7.jpg"
+            alt="">
+        </div>
+        <div class="landscape">
+          <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-w-1.jpg" data-src="img/small/img-w-1.jpg"
+            alt="">
+        </div>
         <div>Engagement Pics</div>
         <div class="portrait">Couple Pics</div>
         <div>Dog Pics</div>

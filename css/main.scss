@@ -7,6 +7,9 @@
 @import '_nav';
 @import '_gallery';
 
+
+
+
 html,
 body {
     margin: 0;
@@ -26,16 +29,16 @@ h2 {
     font-size: calc(1.2rem + 4vw);
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
-    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
+    // font-size: calc(1.6rem + 2vw);
 
 }
  h3 {
-    font-size: calc(1rem + 3vw);
+    font-size: calc(1rem + 2vw);
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
 }
 p {
-    color: brown;
+    // color: brown;
     // font-size: calc(14px + 8 * ((100vw - 320px) / 960));
 }
 // @media screen and (max-width: $mobile-break) {
@@ -152,3 +155,5 @@ footer {
 
 #contact {display:none;
 &:target{display:block;}}
+
+img[data-sizes="auto"] { display: block; width: 100%; }
