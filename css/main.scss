@@ -7,9 +7,6 @@
 @import '_nav';
 @import '_gallery';
 
-
-
-
 html,
 body {
     margin: 0;
@@ -29,8 +26,6 @@ h2 {
     font-size: calc(1.2rem + 4vw);
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
-    // font-size: calc(1.6rem + 2vw);
-
 }
 
 h3 {
@@ -38,7 +33,6 @@ h3 {
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
 }
-
 
 .container {
     max-width: 800px;
@@ -54,6 +48,28 @@ h3 {
     $color: $green;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
 
+    .directions {
+        display: block;
+        margin: auto;
+        padding: 1em;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            padding: .5em 0;
+            display: grid;
+            grid-template-columns: 9ex 1fr;
+            grid-gap: 1em;
+
+            time {
+                text-align: right;
+            }
+        }
+    }
 }
 
 #party {
@@ -67,7 +83,6 @@ h3 {
     }
 
     li {
-        // line-height: 2em;
         font-size: 1.2em;
         padding: .5em 0;
     }
@@ -75,20 +90,21 @@ h3 {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
         @media (max-width: 500px) {
             grid-template-columns: 1fr;
-            // background: red;
         }
-        // grid-auto-columns: min-content min-content;
-grid-gap: 1em;
-grid-auto-flow: row;
-text-align: center;
+
+        grid-gap: 1em;
+        grid-auto-flow: row;
+        text-align: center;
+
         h2 {
             grid-row: 1;
             grid-column: 1 / -1;
         }
 
-        section:last-child{
+        #ushers {
             grid-column: 1 / -1;
         }
     }
@@ -97,6 +113,50 @@ text-align: center;
 #accommodations {
     $color: $tan;
     background: linear-gradient(45deg, lighten($color, 5%), $color, darken($color, 5%));
+
+    .large-cta {
+        display: block;
+        margin: auto;
+        background: $green;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    .hotel {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        padding: 2em 0;
+        h3 {
+            margin: 0;
+        }
+    }
+}
+
+#accommodations,
+#event {
+    a {
+        background: $coral;
+        color: white;
+        padding: .5em 1.2em;
+        display: inline-block;
+        width: 10ch;
+        min-width: max-content;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: color .5s, background .3s;
+
+        &:hover {
+            background: white;
+            color: $coral;
+        }
+    }
 }
 
 #registry {
@@ -138,10 +198,7 @@ text-align: center;
         box-shadow: 5px 5px 10px $navy;
         background: $navy;
 
-        svg path {
-            fill: white;
-        }
-
+        svg path,
         svg circle {
             fill: white;
         }

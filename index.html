@@ -7,10 +7,6 @@
 
   <link rel="preload" href="css/main.css" as="style">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,700,800" as="style">
-  <!-- <link rel="preload" href="js/lazysizes.min.js" as="script">
-  <link rel="preload" href="js/vendor/modernizr-3.7.1.min.js" as="script">
-  <link rel="preload" href="js/plugins.js" as="script">
-  <link rel="preload" href="js/main.js" as="script"> -->
 
   <meta name="description"
     content="The Wedding of Alicia Unkrich and Alex Haas on Saturday, June 1st, 2019 in Mount Pleasant, IA">
@@ -23,17 +19,17 @@
   <meta name="theme-color" content="#394055">
   <script src="js/lazysizes.min.js" async=""></script>
   <style>
-  @font-face {
-  font-family: 'Abril Fatface';
-  font-display: swap;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-lmjcDidBeT5g.woff2) format('woff2');
-}
+    @font-face {
+      font-family: 'Abril Fatface';
+      font-display: swap;
+      src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-lmjcDidBeT5g.woff2) format('woff2');
+    }
 
-@font-face {
-  font-family: 'Open Sans';
-  font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
-}
+    @font-face {
+      font-family: 'Open Sans';
+      font-display: swap;
+      src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+    }
   </style>
 </head>
 
@@ -53,7 +49,6 @@
   </nav>
 
 
-
   <header id="main-header">
     <h1 id=alicia-and-alex><span class='header-name'>Alicia</span> <span class="header-and">&</span> <span
         class="header-name">Alex</span>
@@ -61,11 +56,9 @@
     <h2 class="main-date">Saturday, June 1st, 2019</h2>
     <a href="#rsvp" aria-label="RSVP Now!">RSVP</a>
     <div id="hero">
-      
-      <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/alica-and-alex-engagement-picture-in-front-of-tree.jpg" data-src="img/reg/alica-and-alex-engagement-picture-in-front-of-tree.jpg" alt="">
-      <!-- <img class="lazyload blur-up" data-sizes="auto" src="img/blurry/img-t-2.jpg" data-src="img/small/img-t-2.jpg" -->
-   
-
+      <img class="lazyload blur-up" data-sizes="auto"
+        src="img/blurry/alica-and-alex-engagement-picture-in-front-of-tree.jpg"
+        data-src="img/reg/alica-and-alex-engagement-picture-in-front-of-tree.jpg" alt="">
     </div>
   </header>
 
@@ -105,12 +98,12 @@
         <h4>Wedding Events</h4>
         <p>The ceremony will beginas at <time datetime="2019-06-01 15:30">3:30 pm</time> with reception to follow
           directly after.</p>
-        <div class="timeline">
-          <div><span>3:30 pm</span> <span>Wedding Ceremony</span></div>
-          <div><span>4:00 pm</span> <span>Cocktail Hour</span></div>
-          <div><span>5:30 pm</span> <span>Dinner & Dancing</span></div>
-          <div><span>11:00 pm</span> <span>Tentative After Party</span></div>
-        </div>
+        <ul class="timeline">
+          <li><time datetime="2019-06-01 15:30">3:30 pm</time><span>Wedding Ceremony</span></li>
+          <li><time datetime="2019-06-01 16:00">4:00 pm</time><span>Cocktail Hour</span></li>
+          <li><time datetime="2019-06-01 17:30">5:30 pm</time><span>Dinner & Dancing</span></li>
+          <li><time datetime="2019-06-01 23:00">11:00 pm</time><span>Tentative After Party</span></li>
+        </ul>
       </section>
 
     </div>
@@ -126,36 +119,36 @@
       </p>
       <p>They are blocked under "Haas Unkrich Wedding".</p>
       <p>Reservations should be made by May 10th.</p>
-      <a target="_blank" rel="noreferrer" 
+      <a class="large-cta" target="_blank" rel="noreferrer"
         href="https://www.google.com/maps/d/viewer?mid=122hdI2I95tlwoqFKx3N9rgVBnUymSWh2&usp=sharing">View All Locations
         on a Map</a>
 
       <section class="hotel">
         <h3>AmericInn by Wyndham</h3>
-        <a href="tel:1-319-450-0311">Call Now</a>
         <div>1100 N Grand Ave</div>
         <div>Mount Pleasant, IA 52641</div>
-        <div class="directions">
-          <a target="_blank" rel="noreferrer"  href="https://goo.gl/maps/h28acmVHt992">Directions</a>
+        <div class="links">
+          <a href="tel:1-319-450-0311">Call Now</a>
+          <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/h28acmVHt992">Directions</a>
         </div>
       </section>
 
       <section class="hotel">
         <h3>Quality Inn & Suites</h3>
-        <a href="tel:1-319-385-0571">Call Now</a>
         <div>1200 E Baker St</div>
         <div>Mount Pleasant, IA 52641</div>
-        <div class="directions">
+        <div class="links">
+          <a href="tel:1-319-385-0571">Call Now</a>
           <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/fkouT3zg15H2">Directions</a>
         </div>
       </section>
 
       <section class="hotel">
         <h3>Best Western</h3>
-        <a href="tel:1-319-385-2102">Call Now</a>
         <div>810 N Grand Ave</div>
         <div>Mount Pleasant, IA 52641</div>
-        <div class="directions">
+        <div class="links">
+          <a href="tel:1-319-385-2102">Call Now</a>
           <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/yfNhmps6X1E2">Directions</a>
         </div>
       </section>
@@ -188,7 +181,8 @@
           <p>Target</p>
         </a>
 
-        <a class="store" aria-label="Visit Our Registry at wayfair.com" href="https://www.wayfair.com/registry/wedding/faa323fc-9ea1-420f-b3f7-17aa0307867c">
+        <a class="store" aria-label="Visit Our Registry at wayfair.com"
+          href="https://www.wayfair.com/registry/wedding/faa323fc-9ea1-420f-b3f7-17aa0307867c">
           <svg width="175" height="38" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Wayfair"
             viewBox="0 0 1299.3 285">
             <title>Wayfair</title>
@@ -289,11 +283,9 @@
         <div class="landscape">Friends & Family Pics</div>
         <div>Dog Pics</div>
         <div>Dog Pics</div>
-
       </div>
     </div>
   </section>
-
 
 
   <section id="party">
@@ -307,7 +299,7 @@
           <li>Jessica Janks</li>
           <li>Chantell Eichhorn</li>
           <li>Lindsay Evans</li>
-          <li>Melanie Mccreight</li>
+          <li>Melanie McCreight</li>
           <li>Sheila Finnell-Tomlinson</li>
         </ul>
       </section>
@@ -369,8 +361,6 @@
   <footer>
     <p>Alicia Unkrich & Alex Haas Wedding 2019</p>
   </footer>
-
-
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="js/plugins.js"></script>

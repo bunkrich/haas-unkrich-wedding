@@ -1010,7 +1010,8 @@ input {
   color: black;
 }
 
-.portrait, .landscape {
+.portrait,
+.landscape {
   overflow: hidden;
 }
 
@@ -1073,6 +1074,31 @@ h3 {
   background: linear-gradient(45deg, #66856d, #5B7761, #506955);
 }
 
+#event .directions {
+  display: block;
+  margin: auto;
+  padding: 1em;
+}
+
+#event ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#event ul li {
+  padding: .5em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 9ex 1fr;
+      grid-template-columns: 9ex 1fr;
+  grid-gap: 1em;
+}
+
+#event ul li time {
+  text-align: right;
+}
+
 #party {
   background: linear-gradient(45deg, #f2c4ca, #EDAFB8, #e89aa6);
 }
@@ -1111,12 +1137,64 @@ h3 {
   grid-column: 1 / -1;
 }
 
-#party .container section:last-child {
+#party .container #ushers {
   grid-column: 1 / -1;
 }
 
 #accommodations {
   background: linear-gradient(45deg, #fbf1ec, #F7E1D7, #f3d1c2);
+}
+
+#accommodations .large-cta {
+  display: block;
+  margin: auto;
+  background: #5B7761;
+}
+
+#accommodations .large-cta:hover {
+  color: #5B7761;
+}
+
+#accommodations .hotel {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1em;
+  padding: 2em 0;
+}
+
+#accommodations .hotel h3 {
+  margin: 0;
+}
+
+#accommodations a,
+#event a {
+  background: #EF6F6C;
+  color: white;
+  padding: .5em 1.2em;
+  display: inline-block;
+  width: 10ch;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  -webkit-transition: color .5s, background .3s;
+  transition: color .5s, background .3s;
+}
+
+#accommodations a:hover,
+#event a:hover {
+  background: white;
+  color: #EF6F6C;
 }
 
 #registry {
@@ -1178,10 +1256,7 @@ h3 {
   background: #394055;
 }
 
-.store:hover svg path {
-  fill: white;
-}
-
+.store:hover svg path,
 .store:hover svg circle {
   fill: white;
 }
