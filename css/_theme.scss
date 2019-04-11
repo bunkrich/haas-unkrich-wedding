@@ -52,14 +52,14 @@
 
 $mobile-break: 800px;
 
-// @font-face {
-//   font-family: 'Abril Fatface';
-//   font-display: swap;
-//   src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-lmjcDidBeT5g.woff2) format('woff2');
-// }
+@font-face {
+  font-family: 'Abril Fatface';
+  font-display: swap;
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v10/zOL64pLDlL1D99S8g8PtiKchq-lmjcDidBeT5g.woff2) format('woff2');
+}
 
-// @font-face {
-//   font-family: 'Open Sans';
-//   font-display: swap;
-//   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
-// }
+@font-face {
+  font-family: 'Open Sans';
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+}
