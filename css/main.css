@@ -750,22 +750,52 @@ textarea {
       opacity: 1;
     }
   }
-  #hero .blur-up {
-    -webkit-filter: blur(10px);
-            filter: blur(10px);
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-    -webkit-transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
-    transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
-    transition: filter 2s ease-out, transform 3s ease-in;
-    transition: filter 2s ease-out, transform 3s ease-in, -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+  @media (max-width: 600px) {
+    #main-header {
+      -ms-grid-rows: auto 1fr auto;
+          grid-template-rows: auto 1fr auto;
+    }
+    #main-header #hero {
+      min-height: 100vh;
+    }
+    #main-header #hero img {
+      -o-object-position: 84%;
+         object-position: 84%;
+    }
+    #main-header #alicia-and-alex {
+      margin-top: 100px;
+      -ms-grid-row: 1;
+      grid-row: 1;
+      -ms-flex-line-pack: end;
+          align-content: flex-end;
+    }
+    #main-header #alicia-and-alex .header-and {
+      font-size: 1.8rem;
+    }
+    #main-header .main-date {
+      -ms-grid-row: 3;
+      grid-row: 3;
+      line-height: inherit;
+    }
   }
-  #hero .blur-up.lazyloaded {
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+}
+
+.blur-up {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+  transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+  transition: filter 2s ease-out, transform 3s ease-in;
+  transition: filter 2s ease-out, transform 3s ease-in, -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
+}
+
+.blur-up.lazyloaded {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #hero img {
@@ -822,8 +852,6 @@ input {
 .header {
   background: -webkit-gradient(linear, left bottom, left top, from(#394055), to(#2f3546));
   background: linear-gradient(0deg, #394055, #2f3546);
-  -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   width: 100%;
@@ -961,6 +989,18 @@ input {
   }
 }
 
+.header {
+  -webkit-transform: translate(0px, -5px);
+          transform: translate(0px, -5px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.header:hover {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
 .gallery {
   display: -ms-grid;
   display: grid;
@@ -1042,22 +1082,35 @@ body {
   min-width: 320px;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: 'Abril Fatface', cursive;
-  font-size: calc(1.8rem + 6vw);
   font-weight: 100;
+}
+
+h1 {
+  font-size: calc(1.8rem + 6vw);
 }
 
 h2 {
   font-size: calc(1.2rem + 4vw);
-  font-family: 'Abril Fatface', cursive;
-  font-weight: 100;
 }
 
 h3 {
   font-size: calc(1rem + 2vw);
-  font-family: 'Abril Fatface', cursive;
-  font-weight: 100;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 .container {
@@ -1068,6 +1121,7 @@ h3 {
 
 #wedding > section {
   padding: 3em 0;
+  min-height: 50vh;
 }
 
 #event {
@@ -1148,11 +1202,6 @@ h3 {
 #accommodations .large-cta {
   display: block;
   margin: auto;
-  background: #5B7761;
-}
-
-#accommodations .large-cta:hover {
-  color: #5B7761;
 }
 
 #accommodations .hotel {
@@ -1176,8 +1225,8 @@ h3 {
 
 #accommodations a,
 #event a {
-  background: #EF6F6C;
-  color: white;
+  background: #EDAFB8;
+  color: #172121;
   padding: .5em 1.2em;
   display: inline-block;
   width: 10ch;
@@ -1193,8 +1242,8 @@ h3 {
 
 #accommodations a:hover,
 #event a:hover {
-  background: white;
-  color: #EF6F6C;
+  background: #172121;
+  color: #EDAFB8;
 }
 
 #registry {
@@ -1268,14 +1317,13 @@ h3 {
 
 #wedding #rsvp {
   background: linear-gradient(45deg, #f28683, #EF6F6C, #ec5855);
-  height: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
-#wedding #rsvp:target {
-  height: auto;
-  padding: 3em 0;
+#wedding #rsvp input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+  border: unset;
 }
 
 footer {
