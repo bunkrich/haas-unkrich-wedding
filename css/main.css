@@ -736,6 +736,9 @@ textarea {
     -webkit-animation: hello 3s;
             animation: hello 3s;
   }
+  #hero #cutout {
+    z-index: 1;
+  }
   @-webkit-keyframes hello {
     0% {
       opacity: 0;
@@ -806,10 +809,6 @@ textarea {
           filter: blur(10px);
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
-  -webkit-transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
-  transition: -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
-  transition: filter 2s ease-out, transform 3s ease-in;
-  transition: filter 2s ease-out, transform 3s ease-in, -webkit-filter 2s ease-out, -webkit-transform 3s ease-in;
 }
 
 .blur-up.lazyloaded {

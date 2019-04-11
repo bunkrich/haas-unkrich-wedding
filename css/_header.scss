@@ -135,7 +135,11 @@
             grid-column: 1;
             animation: hello 3s;
         }
-
+        #cutout{
+            z-index: 1;
+            // transform: scale(1.2);
+            // opacity: .2;
+        }
         @keyframes hello {
             0% {
                 opacity: 0;
