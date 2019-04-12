@@ -634,7 +634,7 @@ textarea {
   text-shadow: 5px 5px 5px #394055, -5px -5px 5px #394055;
 }
 
-@supports (display: grid) {
+@supports (justify-content: space-evenly) {
   #main-header {
     display: -ms-grid;
     display: grid;
