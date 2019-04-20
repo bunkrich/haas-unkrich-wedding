@@ -1,6 +1,6 @@
 .gallery {
   display: grid;
-  grid-gap: 1vw;
+  grid-gap: 1vmax;
   overflow: hidden;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-flow: dense;
@@ -16,7 +16,10 @@
   }
 
   div {
-    min-height: 200px;
+    img {
+      min-height: 200px;
+    }
+
     background: $pink
   }
 

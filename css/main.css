@@ -1029,7 +1029,7 @@ input {
 .gallery {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1vw;
+  grid-gap: 1vmax;
   overflow: hidden;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1053,8 +1053,11 @@ input {
 }
 
 .gallery div {
-  min-height: 200px;
   background: #FE938C;
+}
+
+.gallery div img {
+  min-height: 200px;
 }
 
 .gallery .portrait {
